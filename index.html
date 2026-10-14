@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TechHaus | Tech Product Showcase</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" *crossorigin*>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="announcement">TECH WEEK · Discover your next favorite device <span>✦</span> Free shipping on orders over ₹2,999</div>
+
+  <header class="site-header">
+
+    <a class="brand" href="#"><span class="brand-mark">T</span> techhaus<span class="brand-dot">.</span></a>
+
+    <nav id="mainNav">
+
+      <a href="#products">Shop</a><a href="#tools">Smart Tools</a><a href="#highlights">Why TechHaus</a><a href="#newsletter">Updates</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+
+      <button class="cart-button" id="cartButton" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+    </div>
+
+  </header>
+
+
+
+  <section class="hero">
+
+    <div class="hero-copy">
+
+      <div class="eyebrow"><span class="eyebrow-line"></span> THE NEXT GENERATION IS HERE</div>
+
+      <h1>Good tech.<br><span>Better living.</span></h1>
+
+      <p>Thoughtfully picked devices that make your everyday a little more extraordinary. Meet the gear worth getting excited about.</p>
+
+      <div class="hero-actions"><a class="primary-button" href="#products">Explore the collection <span>↗</span></a><a class="text-link" href="#highlights">What makes us different? <span>↓</span></a></div>
+
+      <div class="hero-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div><div><strong>Loved by 12,000+ tech fans</strong><small>Curated picks. No guesswork.</small></div></div>
+
+    </div>
+
+    <div class="hero-visual">
+
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+
+      <div class="hero-glow"></div>
+
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85" alt="Premium wireless headphones" class="hero-product">
+
+      <div class="floating-card top-card"><span class="live-dot"></span><div><small>EDITOR'S PICK</small><strong>Sound, reimagined.</strong></div><span class="card-star">✦</span></div>
+
+      <div class="floating-card price-card"><small>STARTING FROM</small><strong>₹4,999</strong><span>Premium sound, everyday.</span></div>
+
+      <div class="hero-index">01 <span>/</span> 04</div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="trust-strip"><div><strong>✳</strong> Carefully curated</div><div><strong>↗</strong> Honest recommendations</div><div><strong>◈</strong> Quality-first picks</div><div><strong>♡</strong> Support that cares</div></section>
+
+
+
+  <main>
+
+    <section class="products-section" id="products">
+
+      <div class="section-heading"><div><div class="eyebrow">THE GOOD STUFF</div><h2>Meet your next <span>favorite.</span></h2><p>Great design, clever features, and tech that earns its place.</p></div><a href="#products" class="text-link desktop-link">Explore all products ↗</a></div>
+
+      <div class="product-toolbar">
+
+        <div class="filter-pills" id="filters"><button class="filter-pill active" data-category="all">All gear <span>6</span></button><button class="filter-pill" data-category="audio">Audio</button><button class="filter-pill" data-category="wearables">Wearables</button><button class="filter-pill" data-category="desk">Desk setup</button></div>
+
+        <label class="sort-wrap">Sort by <select id="sortProducts"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+
+      </div>
+
+      <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="Search headphones, watches, speakers…"><button id="clearSearch">Clear</button></div>
+
+      <div class="product-grid" id="productGrid">
+
+        <article class="product-card" data-category="audio" data-price="4999" data-name="Aura wireless headphones" data-featured="1">
+
+          <div class="product-image image-lilac"><span class="product-tag">BESTSELLER</span><button class="wishlist" aria-label="Add Aura to wishlist">♡</button><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Aura wireless headphones"><button class="quick-view" data-product="Aura Wireless Headphones">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS AUDIO</span><span class="rating">★ 4.9</span></div><h3>Aura Wireless Headphones</h3><p>Deep sound. Zero distractions.</p><div class="product-bottom"><strong>₹4,999</strong><button class="add-button" data-name="Aura Wireless Headphones" data-price="4999">＋ Add to bag</button></div></div>
+
+        </article>
+
+        <article class="product-card" data-category="wearables" data-price="6999" data-name="Pulse smart watch" data-featured="2">
+
+          <div class="product-image image-peach"><span class="product-tag new-tag">JUST IN</span><button class="wishlist" aria-label="Add Pulse to wishlist">♡</button><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Minimal smart watch"><button class="quick-view" data-product="Pulse Smart Watch">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS WEAR</span><span class="rating">★ 4.8</span></div><h3>Pulse Smart Watch</h3><p>Your day, in perfect sync.</p><div class="product-bottom"><strong>₹6,999</strong><button class="add-button" data-name="Pulse Smart Watch" data-price="6999">＋ Add to bag</button></div></div>
+
+        </article>
+
+        <article class="product-card" data-category="desk" data-price="3299" data-name="Arc wireless speaker" data-featured="3">
+
+          <div class="product-image image-mint"><span class="product-tag">STAFF PICK</span><button class="wishlist" aria-label="Add Arc to wishlist">♡</button><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85" alt="Compact premium speaker"><button class="quick-view" data-product="Arc Wireless Speaker">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS SOUND</span><span class="rating">★ 4.7</span></div><h3>Arc Wireless Speaker</h3><p>Small speaker. Big atmosphere.</p><div class="product-bottom"><strong>₹3,299</strong><button class="add-button" data-name="Arc Wireless Speaker" data-price="3299">＋ Add to bag</button></div></div>
+
+        </article>
+
+        <article class="product-card" data-category="audio" data-price="2499" data-name="Echo true wireless earbuds" data-featured="4">
+
+          <div class="product-image image-blue"><button class="wishlist" aria-label="Add Echo to wishlist">♡</button><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=85" alt="True wireless earbuds"><button class="quick-view" data-product="Echo True Wireless Earbuds">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS AUDIO</span><span class="rating">★ 4.6</span></div><h3>Echo True Wireless Earbuds</h3><p>Your soundtrack, untangled.</p><div class="product-bottom"><strong>₹2,499</strong><button class="add-button" data-name="Echo True Wireless Earbuds" data-price="2499">＋ Add to bag</button></div></div>
+
+        </article>
+
+        <article class="product-card" data-category="desk" data-price="5499" data-name="Halo desk lamp" data-featured="5">
+
+          <div class="product-image image-yellow"><span class="product-tag">DESK UPGRADE</span><button class="wishlist" aria-label="Add Halo to wishlist">♡</button><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85" alt="Modern desk lamp"><button class="quick-view" data-product="Halo Desk Lamp">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS SPACE</span><span class="rating">★ 4.8</span></div><h3>Halo Desk Lamp</h3><p>Set the mood. Find your focus.</p><div class="product-bottom"><strong>₹5,499</strong><button class="add-button" data-name="Halo Desk Lamp" data-price="5499">＋ Add to bag</button></div></div>
+
+        </article>
+
+        <article class="product-card" data-category="wearables" data-price="1899" data-name="Loop everyday band" data-featured="6">
+
+          <div class="product-image image-rose"><button class="wishlist" aria-label="Add Loop to wishlist">♡</button><img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=700&q=85" alt="Minimal fitness band"><button class="quick-view" data-product="Loop Everyday Band">Quick look ↗</button></div>
+
+          <div class="product-info"><div class="product-meta"><span>TECHHAUS WEAR</span><span class="rating">★ 4.5</span></div><h3>Loop Everyday Band</h3><p>Little habits. Big momentum.</p><div class="product-bottom"><strong>₹1,899</strong><button class="add-button" data-name="Loop Everyday Band" data-price="1899">＋ Add to bag</button></div></div>
+
+        </article>
+
+      </div>
+
+      <p id="noResults" class="no-results">No products match that search. Try another name or category.</p>
+
+    </section>
+
+
+
+    
+<section class="smart-tools" id="tools">
+  <div class="tools-intro">
+    <div><div class="eyebrow">MORE THAN A STORE</div><h2>Smart tools for <span>everyday decisions.</span></h2>
+    <p>Useful interactive features, built right into TechHaus. No extra pages or downloads.</p></div>
+    <span class="tools-badge">✦ TRY IT YOURSELF</span>
+  </div>
+  <div class="tools-columns">
+    <article class="mini-tool budget-tool">
+      <div class="mini-tool-top"><span class="mini-icon">₹</span><span class="mini-kicker">PLAN BETTER</span></div>
+      <h3>Budget Calculator</h3><p>Split your monthly income into essentials, tech purchases and savings.</p>
+      <label for="toolIncome">Monthly income (₹)</label><input id="toolIncome" type="number" min="1" value="50000">
+      <div class="tool-input-grid"><div><label for="toolNeeds">Essentials (%)</label><input id="toolNeeds" type="number" min="0" max="100" value="50"></div><div><label for="toolTech">Tech fund (%)</label><input id="toolTech" type="number" min="0" max="100" value="15"></div></div>
+      <button class="tool-action" id="budgetCalculate">Calculate my budget ↗</button>
+      <div class="tool-result" id="budgetResult" aria-live="polite">Your tech fund: <strong>₹7,500</strong><small>Remaining after these categories: ₹17,500</small></div>
+    </article>
+    <article class="mini-tool cake-tool">
+      <div class="mini-tool-top"><span class="mini-icon">✿</span><span class="mini-kicker">QUICK ORDER</span></div>
+      <h3>Cake Order Calculator</h3><p>A bonus mini-tool to choose a cake and instantly calculate the order total.</p>
+      <label for="cakeChoice">Choose a cake</label><select id="cakeChoice"><option value="499">Chocolate cake — ₹499</option><option value="449">Vanilla cake — ₹449</option><option value="549">Red velvet — ₹549</option><option value="599">Black forest — ₹599</option></select>
+      <label for="cakeQty">Quantity</label><div class="quantity-row"><button type="button" id="cakeMinus" aria-label="Decrease cake quantity">−</button><output id="cakeQtyDisplay">1</output><button type="button" id="cakePlus" aria-label="Increase cake quantity">+</button></div>
+      <button class="tool-action pink-action" id="cakeCalculate">Calculate order total ↗</button>
+      <div class="tool-result pink-result" id="cakeResult" aria-live="polite">Order total: <strong>₹499</strong><small>Choose a cake and quantity to begin.</small></div>
+    </article>
+    <article class="mini-tool car-tool">
+      <div class="mini-tool-top"><span class="mini-icon">◈</span><span class="mini-kicker">MAKE IT YOURS</span></div>
+      <h3>Car Customizer</h3><p>Preview a car setup by choosing a color, glass tint and wheel size.</p>
+      <div class="car-swatch-row"><label>Body color</label><div class="tool-swatches"><button class="tool-swatch active" data-carcolor="#3178d4" data-colorname="Blue" style="--swatch:#3178d4" aria-label="Blue"></button><button class="tool-swatch" data-carcolor="#dc4848" data-colorname="Red" style="--swatch:#dc4848" aria-label="Red"></button><button class="tool-swatch" data-carcolor="#f2f3f5" data-colorname="White" style="--swatch:#f2f3f5" aria-label="White"></button><button class="tool-swatch" data-carcolor="#252b35" data-colorname="Black" style="--swatch:#252b35" aria-label="Black"></button></div></div>
+      <label for="glassTint">Glass tint</label><select id="glassTint"><option value="Light">Light</option><option value="Medium" selected>Medium</option><option value="Dark">Dark</option></select>
+      <label for="wheelSize">Wheel size</label><select id="wheelSize"><option>16 inch</option><option selected>17 inch</option><option>18 inch</option><option>19 inch</option></select>
+      <button class="tool-action dark-action" id="carApply">Apply customization ↗</button>
+      <div class="tool-result car-result" id="carResult" aria-live="polite">Your setup: <strong>Blue</strong><small>Medium tint · 17 inch wheels</small></div>
+    </article>
+  </div>
+</section>
+
+<section class="feature-banner" id="highlights"><div class="feature-copy"><div class="eyebrow">LESS SCROLLING. MORE LOVING.</div><h2>Good choices<br>should feel <span>simple.</span></h2><p>We cut through the specs and noise to bring you gear that's useful, thoughtfully designed, and worth your money.</p><a href="#products" class="primary-button">Find your fit <span>↗</span></a></div><div class="feature-art"><div class="feature-circle circle-back"></div><div class="feature-circle circle-front"></div><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=85" alt="Modern collection of technology devices"></div></section>
+
+
+
+    <section class="benefits"><div class="benefit"><span class="benefit-icon">✦</span><h3>Picked with purpose</h3><p>Less clutter, more genuinely useful technology.</p></div><div class="benefit"><span class="benefit-icon">⌁</span><h3>Details that matter</h3><p>Simple descriptions to help you choose confidently.</p></div><div class="benefit"><span class="benefit-icon">♡</span><h3>Here to help</h3><p>A friendly experience from browsing to checkout.</p></div></section>
+
+
+
+    <section class="newsletter" id="newsletter"><div><div class="eyebrow">A LITTLE TECH INSPIRATION</div><h2>Good things land<br>in your <span>inbox.</span></h2><p>New finds, practical tips, and the occasional very good deal.</p></div><form id="newsletterForm"><label for="emailInput">Your email address</label><div class="email-row"><input type="email" id="emailInput" placeholder="you@example.com" *required*><button type="submit">Count me in ↗</button></div><small id="newsletterMessage">No spam. Just the good stuff. Unsubscribe whenever.</small></form></section>
+
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">T</span> techhaus<span class="brand-dot">.</span></a><p>Better everyday tech starts here.</p><div class="footer-links"><a href="#products">Shop</a><a href="#highlights">Our approach</a><a href="#newsletter">Newsletter</a></div><small>© 2026 TechHaus. Student showcase project.</small></footer>
+
+
+
+  <div class="toast" id="toast" role="status">Added to your bag ✓</div>
+
+  <div class="modal-backdrop" id="modalBackdrop"><div class="quick-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-symbol">✦</div><div class="eyebrow">A CLOSER LOOK</div><h2 id="modalTitle">Product name</h2><p>Thoughtfully chosen tech with useful features, clean design, and everyday convenience. Add it to your bag to keep exploring your picks.</p><button id="modalAdd" class="primary-button">Add to bag <span>＋</span></button></div></div>
+
+  <aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><h2>Your bag <span id="drawerCount">(0)</span></h2><button id="cartClose" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is taking a little breather. Find something you love.</p></div><div class="cart-foot"><div><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><button id="checkoutButton" class="primary-button">Continue exploring <span>↗</span></button><small>Demo storefront — no payment is collected.</small></div></aside>
+
+  <div class="drawer-scrim" id="drawerScrim"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
